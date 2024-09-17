@@ -1,0 +1,696 @@
+title {
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+.nav-bar {
+    display: none;
+}
+
+/* Hamburger button */
+.dropbtn {
+    cursor: pointer;
+    color: white;
+    border: none;
+    margin: 10px;
+}
+
+/* Dropdown content - hidden by default */
+.dropdown-content {
+    display: none;
+    position: fixed;  /* Fixed to make it relative to the viewport */
+    top: 60px;        /* Adjust based on your header/nav height */
+    left: 10%;
+    right: 10%;         /* Ensures full-width dropdown */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 80%;      /* Full width of the viewport */
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+    color: black;
+    text-align: center;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    padding: 12px 16px;
+    text-decoration: none;
+    /* display: block; */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.show {
+    display: block;
+}
+
+
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(205, 141, 255, 1), rgba(255, 161, 246, 1));
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading h1 {
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-pic {
+    background-image: url(./images/profile-pic.jpg);
+    background-position: center;
+    background-size: contain;
+    height: 180px;
+    width: 180px;
+    margin: 50px 20px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 5px 5px 10px rgb(255, 195, 246);
+}
+
+.greeting {
+    background-color: rgba(255, 255, 255, 0.76);
+    height: 160px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.greeting h2 {
+    color: rgba(205, 141, 255, 1);
+    font-family: "Belanosima", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.greeting p {
+    font-family: "Asap", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+}
+
+.about-desc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-desc p {
+    font-family: "Asap", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    word-spacing: 4px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hobbies h3 {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;  
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.hobby-icons {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.hobby-icons img {
+    height: 50px;
+    width: 50px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.skills h3 {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;  
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+
+.skill-tracker {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.skills-right {
+    margin-left: 50px;
+}
+
+.html, .css, .js, .figma {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.html:hover, .css:hover, .js:hover, .figma:hover {
+    transform: scale(1.05);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.skill-name {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;  
+    font-size: 20px;
+}
+
+.progress-bar {
+    background-color: rgba(217, 217, 217, 1);
+    height: 10px;
+    width: 100%;
+}
+
+.html-progress, .css-progress, .js-progress, .figma-progress {
+    background-image: linear-gradient(to right, rgba(205, 141, 255, 1), rgba(255, 161, 246, 1));
+    height: 100%;
+}
+
+.html-progress {
+    width: 80%;
+}
+
+.css-progress {
+    width: 70%;
+}
+
+.js-progress {
+    width: 60%;
+}
+
+.figma-progress {
+    width: 70%;
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-image: url(./images/purple-grid.svg);
+    background-position: center;
+    background-size: contain;
+    border: 2px solid rgba(255, 161, 246, 1);
+    padding: 30px;
+    box-sizing: border-box;
+    padding-top: 0;
+}
+
+.project h2 {
+    margin: 10px;
+}
+
+.project-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    transition: 0.5s;
+    margin: 20px 0 30px 0;
+}
+
+
+.project-display img {
+    width: 100%;
+    height: 80%;
+}
+
+.project-details {
+    background-image: linear-gradient(to bottom, rgba(206, 141, 255, 0.605), rgb(255, 161, 246));
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    padding: 10px 5px;
+    box-sizing: border-box;
+
+}
+
+.project-title {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400; 
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    margin-bottom: 5px;
+    
+}
+
+.project-description {
+    font-family: "Asap", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+
+}
+
+.project-number {
+    background-color:  rgb(206, 141, 255);
+    padding: 10px 15px;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400; 
+    font-size: 20px;
+    color: white;
+    border: none;
+    margin: 0 20px 0 20px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.project-count {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-number:active {
+    background-image: linear-gradient(to bottom, rgb(206, 141, 255), rgb(255, 161, 246));
+}
+
+.contact-me {
+    background-image: linear-gradient(to bottom, rgb(255, 161, 246), rgb(206, 141, 255));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me h2 {
+    margin-bottom: 70px;
+    color: white;
+}
+
+.contacts {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: 50px 50px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contacts svg {
+    height: 50px;
+}
+
+
+.contact-details {
+    background-color: rgba(255, 196, 254, 1);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Asap", sans-serif;
+    font-weight: 300; 
+    font-size: 20px;
+}
+
+.contact-icon {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    margin: 70px 0 10px;
+}
+
+.contact-icon svg {
+    height: 40px;
+    width: 40px;
+}
+
+footer {
+    color: white;
+    font-family: "Asap", sans-serif;
+    font-weight: 300; 
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .hero {
+        height: 1000px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-bar a {
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: white;
+        font-family: "Belanosima", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .heading h1 {
+        font-size: 100px;
+        margin: 100px 0 30px;
+    }
+
+    .profile-pic {
+        height: 200px;
+        width: 200px;
+        margin: 40px 0 60px;
+        transition: 0.5s;
+    }
+
+    .greeting {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .hobby-icons {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .hobby-icons img {
+        height: 60px;
+        width: 60px;
+        transition: 0.5s;
+    }
+
+    .hobby-icons img:hover {
+        transform: scale(1.125);
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .skills h3 {
+        font-family: "Belanosima", sans-serif;
+        font-weight: 400;  
+        font-size: 23px;
+        margin-bottom: 7px;
+    }
+
+    .skill-tracker {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .project {
+        padding: 30px 0;
+    }
+
+
+    .project-display {
+        width: 90%;
+        height: 550px;
+        transition: 0.5s;
+        margin: 20px 0 30px 0;
+    }
+
+    .project-display:hover {
+        transform: scale(1.05);
+    }
+
+    .project-details {
+        height: 20%;
+    }
+
+    .project-title {
+        font-size: 23px;
+    }
+
+    .project-description {
+        font-size: 15px;
+    }
+
+
+    .project-number:hover {
+        background-image: linear-gradient(to bottom, rgb(206, 141, 255), rgb(255, 161, 246));
+    }
+
+    .contacts svg {
+        height: 50px;
+        width: 50px;
+    }
+
+    footer {
+        color: white;
+        font-family: "Asap", sans-serif;
+        font-weight: 300; 
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .hero {
+        height: 830px;
+        align-items: flex-start;
+    }
+
+    .nav-bar {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+
+    .heading h1 {
+        margin: 100px 0 20px 200px;
+        text-align: left;
+    }
+     
+    .intro {
+        display: flex;
+        flex-direction: row;
+        padding-left: 200px;
+    }
+
+    .profile-pic {
+        height: 180px;
+        width: 180px;
+        margin: 50px 30px 40px 0;
+        transition: 0.5s;
+        box-shadow: none;
+    }
+
+    .profile-pic:hover {
+        transform: scale(1.1);
+        box-shadow: 5px 5px 10px rgb(255, 195, 246);
+    }
+
+    .greeting {
+        width: 400px;
+    }
+
+    .about-desc p {
+        width: 75%;
+    }
+
+    .hobbies {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .hobbies h3 {
+        font-family: "Belanosima", sans-serif;
+        font-weight: 400;  
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .hobby-icons {
+        display: flex;
+        width: 62%;
+        justify-content: space-between;
+    }
+
+    .hobby-icons img {
+        height: 80px;
+        width: 80px;
+        transition: 0.5s;
+    }
+
+    .hobby-icons img:hover {
+        transform: scale(1.125);
+    }
+
+    .skill-tracker {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        column-gap: 50px;
+        row-gap: 20px;
+        width: 75%;
+        justify-content: center;
+    }
+
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-image: url(./images/purple-grid.svg);
+        background-position: center;
+        background-size: contain;
+        border: 2px solid rgba(255, 161, 246, 1);
+        padding: 20px;
+        box-sizing: border-box;
+        padding-top: 0;
+    }
+
+    .project h2 {
+        font-family: "Kalnia", serif;
+        font-weight: 400;
+        font-size: 50px;
+        margin: 10px;
+    }
+
+    .project-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        height: 700px;
+        transition: 0.5s;
+        margin: 20px 0 30px 0;
+    }
+
+    .project-display:hover {
+        transform: scale(1.05);
+    }
+
+    .project-display img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .project-details {
+        padding: 20px;
+    }
+
+    .project-title {
+        margin: 0;
+        margin-bottom: 5px;
+        
+    }
+
+    .project-description {
+        font-size: 20px;
+    }
+
+
+    .project-number:hover {
+        background-image: linear-gradient(to bottom, rgb(206, 141, 255), rgb(255, 161, 246));
+    }
+
+    .contacts {
+        margin: 80px 0 50px;
+        padding: 10px;
+        width: 33%;
+        grid-template-columns: 70px 80%;
+        grid-template-rows: 70px 70px;
+        justify-content: center;
+        gap: 25px;
+        transition: 0.5s;
+        box-sizing: border-box;
+    }
+
+    .contacts:hover {
+        transform: scale(1.15);
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    }
+
+    .contacts svg {
+        height: 70px;
+        width: 70px;
+    }
+
+}
